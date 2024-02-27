@@ -10,7 +10,7 @@ function App() {
 
   const handleViewMetrics = async () => {
     try {
-      const response = await fetch(`http://smartdevopsbackend.neuraforgelabs.click/metrics?app_name=${selectedApp}`);
+      const response = await fetch(`https://smartdevopsbackend.neuraforgelabs.click/metrics?app_name=${selectedApp}`);
       const data = await response.json();
       setMetricsData(data);
     } catch (error) {
@@ -66,7 +66,7 @@ function App() {
 
   const handleDORARecommendationReport = async () => {
     try {
-      const response = await fetch(`http://smartdevopsbackend.neuraforgelabs.click/metrics?app_name=${selectedApp}`);
+      const response = await fetch(`https://smartdevopsbackend.neuraforgelabs.click/metrics?app_name=${selectedApp}`);
       const data = await response.json();
       alert(`DORA Application Name: ${selectedApp}\nTotal Deployments: ${data.total_deployments}\nPassed Deployments: ${data.passed_deployments}\nFailed Deployments: ${data.failed_deployments}`);
       // Run OpenAI query after displaying DORA report

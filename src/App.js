@@ -19,7 +19,7 @@ function App() {
   };
 
   const runOpenAIQuery = async () => {
-    const openaiApiKey = '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';
+    const openaiApiKey = process.env.REACT_APP_OPENAI_API_KEY; 
     const headers = {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${openaiApiKey}`

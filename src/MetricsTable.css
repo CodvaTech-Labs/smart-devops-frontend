@@ -1,0 +1,82 @@
+.metrics-container {
+  margin-top: 20px;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ff7f50; /* Orange border */
+}
+
+.metrics-table th, .metrics-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ff7f50; /* Orange border */
+}
+
+.metrics-table th {
+  background-color: #ff7f50; /* Orange */
+  color: white;
+}
+
+.metrics-table tbody tr:nth-child(odd) {
+  background-color: #fff; /* White */
+}
+
+.metrics-table tbody tr:nth-child(even) {
+  background-color: #ff7f50; /* Orange */
+  color: white;
+}
+
+.metrics-table tbody tr:hover {
+  background-color: #ffa07a; /* Lighter shade of orange */
+}
+
+/* Dropdown button */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f9f9f9;
+}
+
+/* "View Metrics" button */
+.view-metrics-btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-metrics-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

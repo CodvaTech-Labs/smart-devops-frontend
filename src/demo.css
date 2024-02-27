@@ -1,0 +1,76 @@
+.App {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+  }
+  
+  button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Dropdown button */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown button {
+    background-color: #f8f9fa; /* Light gray */
+    color: #333; /* Dark gray */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Gray border */
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dropdown button:hover {
+    background-color: #e9ecef; /* Lighter gray on hover */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* White */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ced4da; /* Gray border */
+    border-radius: 5px;
+  }
+  
+  .dropdown-content button {
+    display: block;
+    padding: 10px 20px;
+    color: #333; /* Dark gray */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #f8f9fa; /* Light gray on hover */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

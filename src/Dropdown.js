@@ -5,7 +5,7 @@ function Dropdown({ setSelectedApp }) {
   const [options, setOptions] = useState([]);
 
   useEffect(() => {
-    fetch('http://devops-backend-788241747.ap-south-1.elb.amazonaws.com/applications')
+    fetch('http://smartdevopsbackend.neuraforgelabs.click/applications')
       .then(response => response.json())
       .then(data => setOptions(data))
       .catch(error => console.error('Error fetching applications:', error));

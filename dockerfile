@@ -13,6 +13,10 @@ RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 
+# Set environment variable for React app
+ARG REACT_APP_OPENAI_API_KEY
+ENV REACT_APP_OPENAI_API_KEY $REACT_APP_OPENAI_API_KEY
+
 # Build the React application
 RUN npm run build
 

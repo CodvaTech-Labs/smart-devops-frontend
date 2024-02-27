@@ -24,6 +24,6 @@ jobs:
     - name: Create Docker Build and Upload to ECR 
       run: | 
         aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/s3c4l2m0
-        docker build -t smart-devops-frontend .
+        docker build --build-arg REACT_APP_OPENAI_API_KEY=${{ secrets.REACT_APP_OPENAI_API_KEY }} -t smart-devops-frontend .
         docker tag smart-devops-frontend:latest public.ecr.aws/s3c4l2m0/smart-devops-frontend:latest
         docker push public.ecr.aws/s3c4l2m0/smart-devops-frontend:latest
